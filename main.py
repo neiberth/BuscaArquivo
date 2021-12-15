@@ -11,8 +11,8 @@ def onClik():
     ltw_resultado.addItem(dir)
 
 def onClear():
-    edt_dir.setText('')
-    edt_arquivo.setText('')
+    edt_dir.clear()
+    edt_arquivo.clear()
     ltw_resultado.clear()
 
 # ****** INIT - APP ******
@@ -75,7 +75,6 @@ gpb_resultado.setTitle('Resultado')
 # ------ INIT - GROUP BOX ------
 ltw_resultado = QListWidget(gpb_resultado)
 ltw_resultado.setGeometry(23, 39, 471, 201)
-
 # ------ END - GROUP BOX ------
 
 window.show()
